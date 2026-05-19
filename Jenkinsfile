@@ -3,9 +3,9 @@ pipeline {
 
     stages {
 
-        stage('Clean Workspace') {
+        stage('Checkout') {
             steps {
-                deleteDir()
+                checkout scm
             }
         }
 
