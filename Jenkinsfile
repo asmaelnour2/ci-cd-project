@@ -39,13 +39,7 @@ pipeline {
 
     post {
         always {
-            echo 'Pipeline has finished executing.'
-        }
-        success {
-            echo 'Congratulations! The deployment was successful.'
-        }
-        failure {
-            echo 'Uh oh, something went wrong during the pipeline.'
+            echo 'Pipeline finished execution successfully.'
         }
     }
 }
